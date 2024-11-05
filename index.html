@@ -15,6 +15,26 @@
         width: 100%;
         height: 100%;
       }
+
+      .google-text {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 3em;
+        font-weight: bold;
+        font-family: Arial, sans-serif;
+        display: flex;
+      }
+      
+      .google-text span:nth-child(1) { color: #4285F4; } 
+      .google-text span:nth-child(2) { color: #EA4335; } 
+      .google-text span:nth-child(3) { color: #FBBC05; } 
+      .google-text span:nth-child(4) { color: #4285F4; } 
+      .google-text span:nth-child(5) { color: #34A853; } 
+      .google-text span:nth-child(6) { color: #EA4335; } 
+      .google-text span:nth-child(7) { color: #4285F4; } 
+      .google-text span:nth-child(8) { color: #34A853; } 
     </style>
   </head>
   <body>
@@ -24,7 +44,20 @@
     <h5>4-12</h5>
     <h5>ФІТ</h5>
     <h5>Білет №2</h5>
-    <div id="mapContainer"></div>
+    <div id="mapContainer">
+      <div class="google-text">
+        <span>Ґ</span>
+        <span>у</span>
+        <span>ґ</span>
+        <span>л</span>
+        <span> </span>
+        <span>к</span>
+        <span>а</span>
+        <span>р</span>
+        <span>т</span>
+        <span>а</span>
+      </div>
+    </div>
 
     <script>
       function loadMap() {
