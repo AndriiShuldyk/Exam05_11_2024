@@ -11,10 +11,9 @@
         height: 100%;
       }
       
-      #gmap_canvas {
+      #mapContainer {
         width: 100%;
         height: 100%;
-        border: none;
       }
     </style>
   </head>
@@ -25,6 +24,20 @@
     <h5>4-12</h5>
     <h5>ФІТ</h5>
     <h5>Білет №2</h5>
-    <iframe id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20Uzyn+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> 
+    <div id="mapContainer"></div>
+
+    <script>
+      function loadMap() {
+        const iframe = document.createElement('iframe');
+        iframe.width = "100%";
+        iframe.height = "100%";
+        iframe.frameBorder = "0";
+        iframe.style.border = "0";
+        iframe.src = "https://maps.google.com/maps?hl=en&q=Uzyn&z=12&ie=UTF8&iwloc=B&output=embed";
+        document.getElementById('mapContainer').appendChild(iframe);
+      }
+
+      window.onload = loadMap;
+    </script> 
   </body>
 </html>
