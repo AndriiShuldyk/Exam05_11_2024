@@ -14,11 +14,12 @@
       #mapContainer {
         width: 100%;
         height: 100%;
+        position: relative;
       }
 
       .google-text {
         position: absolute;
-        top: 20px;
+        top: 20px; /* Відступ від верху контейнера */
         left: 50%;
         transform: translateX(-50%);
         font-size: 3em;
@@ -46,7 +47,10 @@
     <h5>4-12</h5>
     <h5>ФІТ</h5>
     <h5>Білет №2</h5>
-    <div class="google-text">
+    
+    <!-- Контейнер для карти і тексту "Ґуґл карта" -->
+    <div id="mapContainer">
+      <div class="google-text">
         <span>Ґ</span>
         <span>у</span>
         <span>ґ</span>
@@ -58,7 +62,7 @@
         <span>т</span>
         <span>а</span>
       </div>
-    <div id="mapContainer"></div>
+    </div>
 
     <script>
       function loadMap() {
